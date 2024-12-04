@@ -1,0 +1,1082 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Geist+Mono:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    z-index: 1000;
+    top: 0; /* This makes the navbar stick at the top */
+}
+
+.navsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    top: 0; /* This makes the navbar stick at the top */
+    position: sticky;
+}
+
+/* Logo Styling */
+
+.logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+/* Menu Styles */
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin-left: 50px; /* Adjust for spacing */
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #100f0f;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: #555; /* Highlight on hover */
+    border-radius: 5px;
+}
+
+/* Button (SEO Analysis) */
+.icons img {
+    /* width: 100px; */
+    /* height: 100px; */
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu on smaller screens */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu.show {
+        display: block; /* Show menu when it's toggled */
+    }
+
+    .icons {
+        margin-top: 20px;
+    }
+}
+
+/* Menu Toggle Button (for mobile screens) */
+.navbar .toggle-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar .toggle-btn {
+        display: block;
+        /* background-color: #333; */
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .toggle-btn.active {
+        background-color: #555;
+    }
+}
+
+/* navbar section*/
+
+.img1{
+    height: 17vh;
+    width: 12vw;
+    margin-top: 14px;
+    margin-left: 100px;
+}
+.icon{
+    display:flex;
+    list-style:none;
+}
+.icon li{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.Item{
+    margin:20px 20px;
+    height:1vh;
+    width: 7vw;
+    padding: 10px 10px ;
+    justify-content: space-between;   
+    list-style:none;
+    color:black;
+}
+.items:hover{
+    color:green;}
+
+
+
+/* footer section*/
+/* General footer styles */
+.foot {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    color: #333;
+    margin-top: 300px;
+}
+
+/* Wrapper for all the columns */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of columns on small screens */
+    justify-content: space-between;
+    gap: 30px; /* Space between columns */
+}
+
+/* Each column */
+.column {
+    flex: 1;
+    min-width: 250px; /* Minimum width for each column */
+    padding: 20px;
+}
+
+/* Styling for footer sections like links and contact info */
+.footer-section {
+    margin-bottom: 20px;
+}
+
+/* Footer bottom styling */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* List styles for the footer */
+.footersec {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footersec li {
+    margin: 10px 0;
+}
+
+.footersec li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footersec li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive behavior: stack columns on small screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+    }
+    
+    .column {
+        min-width: 100%;
+    }
+}
+/* Basic styles for the menu */
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+ul.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.menu li a {
+    display: block;
+    padding: 14px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Dropdown styles */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 12px 16px;
+}
+
+.dropdown-content li a:hover {
+    background-color: #575757;
+}
+
+
+
+/* home.html*/
+.nav2{
+    display:flex;
+    margin-left: 105px; 
+    list-style: none;
+    align-items:center;
+}
+.head{
+    font-size: 40px;
+}
+.space{
+    padding:20px;
+}
+.text {
+    font-size: 24px;
+    margin-right: 20px;
+}
+/* Container for the text and logo */
+.contains {
+    display: flex;
+    align-items: center; /* Align text and logo vertically in the center */
+    justify-content: flex-start; /* Align content from the start */
+}
+
+/* Styling for the heading text */
+.text {
+    font-size: 48px;
+    margin-right: 10px; /* Space between the text and logo */
+    display: inline; /* Ensure the text and logo are on the same line */
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+
+/* Styling for the additional text */
+.text1 {
+    font-size: 48px; /* Smaller size for the subtitle */
+    display: inline; /* Keep it on the same line as the heading */
+    margin-right: 10px; /* Space between the text and the logo */
+    margin-left: 63px;
+    font-weight: bolder;
+}
+
+/* Styling for the logo */
+.logo1 {
+    width: 50px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 21px; /* Optional: space between the text and logo */
+}
+
+.link1 {
+font-weight: bold;
+margin-left: 30px;
+color:#325A90;
+}
+.para1{
+    font-family: "Manrope", sans-serif;
+    margin-left: 63px;
+    color:#737373;
+}
+
+.btn {
+   border-radius: 8px 24px 8px 8px;
+   padding: 10px;
+   color: white;
+   font-weight: bolder;
+   font-size: 14px;
+   margin-left: 63px;
+   background-color:#325A90;
+}
+#btn2{
+    margin-left:2px;
+    background-color: white;
+    color:#325A90;
+}
+
+.comp{
+    margin-left: 60px;
+
+}
+
+
+/* Basic styles for the breadcrumb */
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin-left: 120px;
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  .breadcrumb-item {
+    display: inline;
+  }
+  
+  .breadcrumb-item a {
+    text-decoration: none;
+  }
+  
+  /* Home link style */
+  .home-link {
+    color: black; /* Home in black */
+  }
+  
+  .home-link:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+  }
+  
+  /* Active service link style */
+  .breadcrumb-item.active a {
+    color: #007bff; /* Active link color (blue) */
+  }
+  
+  .breadcrumb-item.active a:hover {
+    text-decoration: underline; /* Optional: underline on hover for active link */
+  }
+  
+  /* Separator styling */
+  .breadcrumb-separator {
+    display: inline;
+    padding: 0 8px;
+    color: #6c757d; /* Neutral gray color for separator */
+  }
+   
+  /* Container for all elements */
+  .container12 {
+    max-width: 1200px;
+    margin: 55px auto 0 122px;
+}
+.colour{
+    margin-top: 30px;
+      border: 4px solid #57B1E6;
+      border-right: 10px solid #57B1E6;
+      width: 100%;
+      border-top-right-radius: 150px  ;
+      border-bottom:0px;
+      border-right:0px;
+      border-left:0px;
+      margin-bottom: 20px; /* Space between the border and the container12 */
+    }
+
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-lg-2,
+  .col-md-4,
+  .col-sm-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align images to the left */
+    justify-content: center;
+    text-align: center; /* Center text under the images */
+    margin-bottom: 20px;
+  }
+  
+  .col-lg-2 img, .col-md-4 img, .col-sm-8 img {
+    width: 100%; /* Make the image responsive */
+    max-width: 150px; /* Set a max-width for the images */
+    margin-bottom: 10px; /* Space between image and text */
+  }
+  
+  .num {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .text2, .text3, .text4 {
+    font-size: 14px;
+    color: #666;
+  }
+  .digi{
+    color: #325A90;
+}
+.Dm{
+    font-size: 28px;
+}
+  .pic {
+    margin-left: 100px;
+  }
+  #size{
+    font-size:13px;
+  }
+  #top{
+    font-size:13px;
+  }
+  .boost {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space out the left and right sections */
+    gap: 30px; /* Adds space between the left and right columns */
+  }
+  
+  /* Styling the marketing section, make it flex */
+  .marketing {
+    display: flex;
+    justify-content: space-between; /* Ensures left and right content are spaced out */
+    width: 100%;
+  }
+  
+  /* Left column content (Column Search) */
+  .column-search {
+    flex: 1;
+    padding: 135px 214px 30px 50px;
+}
+  
+  /* Right column content (Column with text) */
+  .column {
+    flex: 2; /* Takes up more space */
+  }
+  
+  /* Optional styling for images (e.g. making them smaller) */
+ 
+    #ninja {
+      border-radius: 50%; /* This makes the image round */
+      object-fit: cover; /* Ensures the image fits well inside the circular shape */
+      animation: rotateScale 5s infinite; /* Apply the animation */
+       width: 50px;
+      height: 50px;
+       margin-right: 10px;
+  }
+  @keyframes rotateScale {
+    0% {
+        transform: rotate(0deg) scale(1); /* Initial state: no rotation, normal size */
+    }
+    50% {
+        transform: rotate(180deg) scale(1.1); /* Halfway: rotate 180 degrees, scale up */
+    }
+    100% {
+        transform: rotate(360deg) scale(1); /* End state: rotate 360 degrees, original size */
+    }
+}
+  .boost {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between the left and right columns */
+  }
+  
+
+  .have{
+    margin-top:20px;
+  }
+  /* Styling the marketing section, make it flex */
+  .marketing {
+    display: flex;
+    justify-content: space-between; /* Ensures left and right content are spaced out */
+    width: 100%;
+  }
+  
+  /* Left column content (Column Search) */
+  .column-search {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr); /* Creates 2 equal columns for the pairs */
+}
+  
+  .search-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  #ninja {
+    width: 49px; /* Adjust logo size */
+    height: 40px;
+  }
+  
+  /* Right column content (Column with text) */
+  .column {
+    flex: 2; /* Takes up more space */
+    padding: 20px;
+  }
+  
+  /* Styling for the text in the right column */
+  .pic img {
+    width: 30px; /* Adjust the size of the image */
+    margin-right: 10px;
+  }
+
+  .bin{
+    padding: 13px 14px 0px 179px;
+    color: white;
+    /* margin-bottom: 10%; */
+
+  }
+  #zzr{
+    color: white;
+    margin:0px 0px 55px 45px;
+    
+  }
+  .top{
+    background-color:#325A90;
+    display: flex;  
+    position:relative;
+    top: 362px;
+    height:17vh;
+}
+.coden{
+    width: 3vw;
+    height: 7vh;
+}
+.ball{
+    border: 2px solid #325A90;
+    color:#325A90;
+    border-radius:8px  24px 8px 8px;
+    font-weight:bold;
+    height: 7vh;
+    width: 11vw;
+    margin: 20px 0px 0px 535px;
+}
+
+.work{
+    display:flex;
+    align-items:center;
+    padding-left:590px;
+}
+.head{
+    display:flex;
+    align-items:center;
+    padding-left:590px;
+}
+.ind{
+    margin-top:20px;
+    font-weight:bold;
+    color:#325A90;
+}
+.rowdevloper {
+    display: flex;
+    gap: 15px; /* Adds space between the two divs (you can adjust this value) */
+    margin-left: 110px; 
+}
+
+  .developer {
+    background-color: #8B5CF6;
+    border-radius: 16px 80px 16px 16px ;
+    width: 38vw;  /* Adjust width to fit within the container */
+    height: 60vh;
+    background-color:#FBCFE8;
+    align-items: center;
+    border: 1px solid #000;
+}
+  
+
+.developer img {
+  background-color: #8B5CF6;
+  color: black;
+  width: 17vw;
+  height: 26vh;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 48px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  margin-top: 10px;
+  margin-left: 23px;
+
+}
+
+.inner-box2 {
+  background-color: #efefef;
+  border-radius: 0px 16px 16px 16px;
+  color: black;
+  width: 35vw;
+  height: 22vh;
+  margin-left: 30px;
+  margin-top: 11px;
+  margin: 0px 16px 0px 20px;
+}
+
+#social{
+  padding:0px 95px 0px 95px;
+}
+#market{
+ 
+  margin: 18px 21px 0px 21px;
+}
+
+#media{
+  background-color: white;
+  width: 20vw;
+  height: 28vh;
+  border-Top-left-radius: 12px;
+  border-top-right-radius: 60px;
+  margin: 17px 0px 0px 20px;
+}
+
+.imgdiv{
+    width: 15vw;
+    height: 22vh;
+background-color: #EDE9FE;
+border-Top-left-radius:16px;
+border-Top-right-radius:48px;
+border-Bottom-right-radius:16px;
+border-Bottom-left-radius:16px;
+
+}
+
+.imagdiv img {
+border-radius:  0px 16px 16px 16px; 
+
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover; 
+  }
+  .rowdevloper2 {
+    display: flex;
+    gap: 15px; /* Adds space between the two divs (you can adjust this value) */
+    margin-left: 110px; 
+    margin-top: 10px;
+}
+  
+  .developer1 {
+    border-radius: 15px 50px 15px 15px ;
+    width: 38vw;  /* Adjust width to fit within the container */
+    height: 60vh;
+    background-color: #C4B5FD;
+    display: flex;
+    border: 1px solid #000;
+  }
+
+#sectors{
+    font-size: 32px;    
+
+}
+
+#delivered{
+margin-left: 500px;
+font-size: 40px;    
+margin-top: 2px;
+}
+
+
+.nin {
+    width: 20px;  
+    height: auto; 
+  }  
+
+
+  .know{
+    background-color:rgb(87, 177, 230, 0.32);
+    width:100%;
+    height: 468px;
+    display: block; /* or flex depending on your layout */
+    margin: 0; /* Reset any default margins */
+  }
+  
+       .born{
+        border-radius: 8px 24px 8px 8px;
+        padding: 10px;
+        color: white;
+        font-weight: bolder;
+        font-size: 18px;
+        margin-left: 115px;
+        background-color:#325A90;
+        width:17vw;
+        height:8vh;
+
+      }
+      .cat2{
+        margin-left:115px;
+        margin-bottom:0px;
+      }
+      div.start {
+        margin-left:116px;
+        margin-top:9px;
+      }
+      .kick{
+        margin-left: 116px;
+        margin-top: 11px;
+      }
+      .girl {
+        display: flex; /* Turn the container into a flex container */
+        justify-content: center; /* Optional: Centers the content horizontally */
+        align-items: center; /* Optional: Centers the content vertically */
+        height: 100vh; /* Optional: Makes the container take the full height of the viewport */
+      }
+      
+      .new-div{
+        border-radius: 16px 80px 16px 16px;
+        position: absolute;
+        right: 100px;
+        height: 350px;
+        width: 370px;
+        margin-bottom:300px ;
+      }
+      .row-post {
+        position: absolute;  /* This allows us to position the image freely */
+        top: 50%; /* Adjust as needed to center the image vertically */
+        left: 35%; /* Adjust as needed to center the image horizontally */
+        transform: translate(-50%, -50%); /* This helps to center the image */
+        margin-right: -50px; /* Negative margin to push the image outside */
+        height: 310px; /* Image height */
+        width: 440px; /* Image width */
+      }      
+      
+      .blue {
+        display:flex;
+        background-color: #007bff;
+        width:23vw;
+        height:30vh;
+      }
+      .material-symbols-outlined{
+       
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 8vh; 
+        height: 7.5vh; 
+        background-color: #3498db; /* Background color (e.g., blue) */
+        border-radius: 50%; /* Makes the background round */
+        color: white; /* Icon color */
+        font-size: 24px; 
+        cursor: pointer; 
+        margin-left:26rem;
+        padding: 15px 9px 12px 18px;
+        transform: translateY(-15px); 
+}
+        
+      
+      
+      /* Apply Grid to the .girl container */
+     
+
+      
+      
+      /* The row-post element will automatically be placed in a row */
+      .row-post {
+        display: grid;
+        grid-template-columns: 1fr; /* Makes it a single column */
+        justify-items: center; /* Centers the content horizontally */
+      }
+      
+      /* Image styling */
+      .row-post img {
+        width: auto;
+        height: 200px;
+        margin-bottom: 35rem;
+    margin-left: 45rem; /* Adjust the size */
+      }
+ 
+      
+      
+#hand{
+  width: 3vw;
+  height: 7vh;
+  margin-bottom: 10px;
+}
+ 
+
+
+
+
+
+
+
+
+
+  .progress{
+    height: 4vh;
+    width: 100vw;
+    color: black;
+    margin: 23px 178px 0px 90px;
+  }
+
+
+
+  #content{
+    margin: 132px 1px 2px 120px;
+  }
+
+  .trusted{
+    display:flex;
+    color:#c99898;
+    margin-left:32rem;
+    margin-top:12rem;
+  }
+  #money{
+    color: #E5E5E5;
+    width: 30px;
+    height: 4.5vh;
+    margin-top: 19px;
+    margin-left: 3rem;
+    
+  }
+  #second{
+    color:#E5E5E5;
+    width: 3vw;
+    height:7vh;
+  }
+  .money{
+    color: #E5E5E5;
+    width: 30px;
+    height: 4.5vh;
+    margin-top: 19px;
+    margin-left: 3rem;
+   
+    font-size:2px;
+  }
+  .first{
+    color:#E5E5E5;
+    width: 3vw;
+    height:7vh;
+   
+  }
+
+  .branding{
+    display:flex;
+    margin-top: 35px;
+    margin-bottom: 30px;
+  
+  }
+  .spoti{
+    margin-left: 130px;
+    position: relative;
+    left: 20px;
+    border: 2px dotted blue;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius:8px ;
+    border-bottom-right-radius: 8px ;
+    padding: 40px 60px 30px 50px;
+    margin-left: -30px;
+    transition: transform 0.3s ease; /* Smooth transition when moving logos */
+  }
+  /* Grid container for the frames */
+.frames {
+  width: 72vw;
+  height: 88vh;
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-left: 8rem;
+}
+
+/* Styling each column */
+.column1 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically inside each column */
+  gap: 20px; /* Space between stacked items */
+  margin: 77px 0px 271px -21px;
+}
+.column2 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically inside each column */
+  gap: 20px; /* Space between stacked items */
+  height:75vh;
+  width: 33vw;
+}
+.column3 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically inside each column */
+  gap: 20px; /* Space between stacked items */
+}
+
+
+.column-search1 {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+    flex: 1;
+    padding: 1px 138px 1px 55rem;
+    position: absolute;
+    margin-top: 150px;
+}
+
+
+
+
+
+
+/* Styling each photo block */
+
+
+ .photo1 {
+ 
+  border: 1px solid grey;
+  width: 18vw;
+  height: 24vh;
+   border-top-left-radius: 8px ;
+   border-top-right-radius: 24px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+}
+.photo1 img{
+  padding: 11px 3px 3px 80px;
+
+}
+ .photo2 {
+  border: 1px solid grey;
+  width: 12vw;
+  height: 26vh;
+   border-top-left-radius: 8px ;
+   border-top-right-radius: 24px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+   margin-left: 43px;
+}
+.photo2 img{
+  padding: 11px 3px 3px 65px;
+
+}
+
+ .photo3 {
+  border: 1px solid grey;
+  width: 21vw ;
+  height: 26vh;
+  margin-top:34px;
+   border-top-left-radius: 8px ;
+   border-top-right-radius: 24px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+   margin-left: 60px;
+}
+.photo3 img{
+  padding: 16px 3px 3px 122px;
+}
+ .photo4 {
+  margin-left: 15px;
+  border: 1px solid grey;
+  width: 29vw ;
+  height: 30vh;
+   border-top-left-radius: 8px ;
+   border-top-right-radius: 24px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+}
+ .photo5 {
+  border: 1px solid grey;
+  width: 18vw ;
+  height: 33vh;
+   border-top-left-radius: 8px ;
+   border-top-right-radius: 24px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+   margin: 0px 0px 0px 0px;
+
+}
+.photo5 img{
+  padding: 10px 3px 3px 94px;
+}
+ .photo6 {
+  border: 1px solid grey;
+  width: 18vw ;
+  height: 34vh;
+   border-top-left-radius: 8px ;
+   border-top-right-radius: 24px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+}
+.photo6 img{
+  padding: 1px 3px 3px 82px;
+}
+
+
+.seconds{
+  margin-left: 34px;
+  margin-top: 24px;
+}
+
+.seconds{
+  display: flex;
+}
+
+.travel {
+  color: #000000;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+.travel1 {
+  color: #000000;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+.travel2 {
+  color: #000000;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 66px;
+}
+.travel3 img{
+  width: 4vw;
+  height: 11vh;
+  position : absolute;
+  left :52rem;
+  top: 262rem;
+}
+.travel4{
+  color: #000000;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 76px;
+}
+.travel5{
+  color: #000000;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 66px;
+}
+
+
+
+
+.seconds a{
+   padding-top: 23px;
+   padding-top: 3rem;
+}
+

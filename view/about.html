@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEOninja</title>
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/about.css">
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <div id="services"></div>
+    </main>
+
+
+
+
+
+<!--first head-->
+    <div class="about">
+        <div class="reliable">
+           <p id="trust">Your trusted & reliable</p>
+           <p class="small">full service Digital Marketting Service</p>
+           <h3 class="expi">With expert approach, performance-driven search marketing and tight feedback loops, we</h3><br>
+            <h3 class="expi23"> take our clients business to the peak where customers can find it.</h3>
+           <div class="brutal">
+            <button type="button" class="hell btn-sm-primary">Get a free proposal    ></button>
+           </div>
+        </div>
+    </div>
+    <!--posters-->
+    <div class="management">
+        <div id="idel">
+        <div class="alis1"><img src="../images/ninja.png" alt="ninja" ><p class="Engine">SEO Strategies</p></div>
+        <div class="alis2"> <img src="../images/ninja.png" alt="ninja" ><p class="Engine1">Digital Consultancy</p></div>
+    </div>
+        <div class="alis3">
+            <img src="../images/ninja.png" alt="ninja" ><p class="Engine">Pay Per Click Management</p>
+        </div>
+        <div class="alis4"> <img src="../images/ninja.png" alt="ninja" ><p class="Engine"></p>Design & Development</div>
+        <div class="alis5"> <img src="../images/ninja.png" alt="ninja" ><p class="Engine"></p>Search Media Optimization</div>
+    </div>
+
+
+    <div class="blogs">
+        <div class="semon">
+        <div class="seonin">
+            <img src="../images/ninja.png" alt="ninja" class="sns">
+            <p>seo ninja's blog</p>
+            <h2 class="heat">Catch Up on Our Most<br>Recent Blogs</h2>
+            </div>
+            <div class="poll">
+              <button class="smelling btn-sm-primary"  >View all blogs</button>
+        </div>
+    </div>
+        <div class="count">
+            <div class="box24">
+                <p class="bar1">24</p>
+                <p class="bar">November, 23</p>
+                <div class="webdesign">
+                    <p id="uaer"><b>How to improve your wrbsites's user<br>Experience...</b></p>
+                </div>
+                <ul class="library">
+                    <li>Ux design</li>
+                    <li>Coversion rate</li>
+                    <li>Organic traffic</li>
+                </ul>
+                <div class="computer">
+                    <img src="../images/computer.png" alt="computer" >
+                </div>
+            </div>
+            <div class="box25">
+                <p class="bar1">24</p>
+                <p class="bar">November, 23</p>
+                <div class="webdesign">
+                    <p id="uaer"><b>How to improve your wrbsites's user<br>Experience...</b></p>
+                </div>
+                <ul class="library">
+                    <li>Ux design</li>
+                    <li>Coversion rate</li>
+                    <li>Organic traffic</li>
+                </ul>
+                <div class="computer">
+                    <img src="../images/computer.png" alt="computer" >
+            </div>
+            <div class="box26">
+                
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+     <div class="usout">  
+     <div class="feel">
+        <div class="tattoo">
+            <div class="immig">
+            <img src="../images/sninja.png" alt="" class="jja">
+            <p class="headin">Have a question ?</p>
+            </div>
+            <p class="freef">Feel free to<br>reach out to us! </p>
+        </div>
+     </div>
+     <div class="form">
+        <form class="submission">
+            <input type="text" name="firstname" placeholder="firstname" class="field">    
+            <input type="text" name="lastname" placeholder="lastname" class="field"><br>
+            <input type="email" name="email" placeholder="enter you email" class="field1"><br>
+            <input type="text" name="mobile number" placeholder="mobile number" class="field11"><br>
+            <textarea class="rows" row="5" column="6" placeholder="Your query">
+
+            </textarea><br>
+
+            <button class="smell btn-sm-primary"  >Submit Query</button>
+        </form>
+     </div>
+    </div>
+
+
+
+
+    <div id="footer"></div>
+
+    <script>
+      // JavaScript to load the header
+      fetch("/include/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading header:", error));
+
+      // JavaScript to load the footer
+      fetch("/include/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+      // javascript to load Home/services
+    </script>
+  </body>
+</html>

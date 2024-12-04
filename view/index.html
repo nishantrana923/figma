@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEOninja</title>
+    <link rel="icon" href=".../images/logo1.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <div id="services"></div>
+    </main>
+    <div class="about"></div>
+
+    <div id="footer"></div>
+
+    <script>
+      // JavaScript to load the header
+      fetch("include/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading header:", error));
+
+      // JavaScript to load the footer
+      fetch("include/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+
+        fetch('markup/services.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('services').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading services:', error));
+        fetch('./view/about.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('about').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading about:', error));
+      // javascript to load Home/services
+    </script>
+  </body>
+</html>
